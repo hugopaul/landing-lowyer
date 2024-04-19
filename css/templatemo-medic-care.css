@@ -612,6 +612,10 @@ strong {
     font-size: 13px;
   }
 
+  .formulario textarea {
+    font-size: 13px;
+  }
+
   .exp-box {
     background: #F9F9F9 !important;
     color: var(--primary-color);
@@ -645,6 +649,7 @@ strong {
     /* Remove margens padrão para ajuste fino */
     font-size: 13px;
   }
+
   .exp-box p {
     margin: 0;
     /* Remove margens padrão para ajuste fino */
@@ -941,6 +946,7 @@ strong {
   h6 {
     font-size: 14px;
   }
+
   .logo-menu {
     width: 40px;
   }
