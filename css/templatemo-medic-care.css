@@ -10,36 +10,36 @@ https://templatemo.com/tm-566-medic-care
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #F9F9F9;
-  --primary-color:                #000000;
-  --section-bg-color:             #bbc4ccc5;
-  --dark-color:                   #000000;
-  --title-color:                  #565758;
-  --p-color:                      #717275;
-  --border-color:                 #eaeaea;
+  --white-color: #F9F9F9;
+  --primary-color: #000000;
+  --section-bg-color: #bbc4ccc5;
+  --dark-color: #000000;
+  --title-color: #565758;
+  --p-color: #717275;
+  --border-color: #eaeaea;
 
-  --body-font-family:             'Open Sans', sans-serif;
+  --body-font-family: 'Open Sans', sans-serif;
 
-  --h1-font-size:                 48px;
-  --h2-font-size:                 36px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               16px;
+  --h1-font-size: 43px;
+  --h2-font-size: 31px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --h6-font-size: 20px;
+  --p-font-size: 16px;
+  --menu-font-size: 14px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
-    padding-top: 94px;
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+  position: relative;
+  padding-top: 94px;
 }
 
 /*---------------------------------------
@@ -101,7 +101,7 @@ p {
   letter-spacing: 0.5px;
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -121,67 +121,112 @@ a:hover {
   padding-bottom: 7rem;
 }
 
-.alinha-imagem{
+.alinha-imagem {
   display: grid;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 580px !important;
 }
-.carousel-metrics{
+
+.carousel-metrics {
   width: 1140px !important;
   height: 580px !important;
 }
 
-.duvidas-comuns{
+.duvidas-comuns {
   height: 100% !important;
   padding: 35px;
 }
 
 .whats-icon-fixed {
   position: fixed;
-  bottom: 20px;  /* Distância do fundo da página */
-  right: 20px;   /* Distância do lado direito da página */
-  width: 70px;   /* Largura do ícone */
-  height: auto;  /* Altura automática para manter a proporção */
-  z-index: 1000; /* Garante que o ícone fique acima de outros elementos da página */
+  bottom: 20px;
+  /* Distância do fundo da página */
+  right: 20px;
+  /* Distância do lado direito da página */
+  width: 70px;
+  /* Largura do ícone */
+  height: auto;
+  /* Altura automática para manter a proporção */
+  z-index: 1000;
+  /* Garante que o ícone fique acima de outros elementos da página */
 }
 
-.logo-menu{
+.logo-menu {
   width: 50px;
 }
-.duvidas-asks{
+
+.duvidas-asks {
   background: #000000;
 }
 
-/*---------------------------------------
-  CUSTOM LINK               
------------------------------------------*/
-.custom-link {
-  display: inline-block;
-  text-decoration: none;
-  border: 2px solid var(--primary-color); /* Ajustado para uma borda mais fina */
-  color: var(--primary-color);
-  background-color: white; /* Adicionado fundo branco para contraste */
-  pointer-events: auto;
-  font-weight: var(--font-weight-bold); /* Alterado para bold para maior destaque */
-  line-height: 48px; /* Aumentado para melhorar a legibilidade e o toque */
-  position: relative;
-  padding: 0 35px; /* Ajustado para um melhor espaço interno */
-  box-sizing: border-box;
-  margin: 5px; /* Pequena margem para evitar sobreposição quando usado em série */
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  overflow: hidden;
-  text-transform: uppercase; /* Mantido em maiúsculas para consistência e ênfase */
-  transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
-  cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+.custom-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.custom-link:hover {
-  background-color: var(--section-bg-color); /* Cor de fundo ao passar o mouse */
-  color: var(--primary-color); /* Texto fica branco ao passar o mouse */
+.custom-btn:hover {
+  background-color: var(--section-bg-color);
+}
+
+.faq-box {
+  background: #F9F9F9 !important;
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  /* Define a largura do quadrado */
+  height: auto;
+  /* Define a altura do quadrado para manter um formato quadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.faq-box p {
+  margin: 0;
+  /* Remove margens padrão para ajuste fino */
+}
+
+.faq-box strong {
+  color: var(--primary-color);
+}
+
+.exp-box {
+  background: #F9F9F9 !important;
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 48%;
+  /* Define a largura do quadrado */
+  height: auto;
+  /* Define a altura do quadrado para manter um formato quadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exp-box p {
+  margin: 0;
+  /* Remove margens padrão para ajuste fino */
+}
+
+.exp-box strong {
+  color: var(--primary-color);
+}
+
+.title-font {
+  color: var(--primary-color);
+  font-size: 36px;
+  /* Tamanho grande para destaque */
+  font-weight: 700;
+  /* Peso da fonte para impacto */
 }
 
 b,
@@ -250,25 +295,31 @@ strong {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 0;
     transform: translateY(5px);
   }
+
   10% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   25% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   30% {
     opacity: 0;
     transform: translateY(5px);
   }
+
   80% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -277,7 +328,7 @@ strong {
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
-.hero {  
+.hero {
   padding-top: 0rem;
 }
 
@@ -363,8 +414,8 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-item.active .nav-link, 
-.nav-link:focus, 
+.navbar-nav .nav-item.active .nav-link,
+.nav-link:focus,
 .nav-link:hover {
   color: var(--dark-color);
 }
@@ -451,10 +502,10 @@ strong {
   flex-direction: row-reverse;
 }
 
-.timeline h3, 
+.timeline h3,
 .timeline p {
   padding: 10px 30px;
-} 
+}
 
 .timeline h3 {
   background: var(--dark-color);
@@ -487,7 +538,7 @@ strong {
 .timeline-nodes:nth-child(odd) .timeline-date {
   text-align: left;
 }
- 
+
 .timeline-nodes:nth-child(even) .timeline-date {
   text-align: right;
 }
@@ -535,9 +586,9 @@ strong {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   z-index: 1;
 }
 
@@ -553,6 +604,52 @@ strong {
 
 @media (max-width: 767px) {
 
+  .formulario p {
+    font-size: 11px;
+  }
+
+  .formulario input {
+    font-size: 11px;
+  }
+
+  .exp-box {
+    background: #F9F9F9 !important;
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .p-mobile {
+    font-size: 11px;
+  }
+
+  .faq-box {
+    background: #F9F9F9 !important;
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .faq-box p {
+    margin: 0;
+    /* Remove margens padrão para ajuste fino */
+    font-size: 11px;
+  }
+  .exp-box p {
+    margin: 0;
+    /* Remove margens padrão para ajuste fino */
+    font-size: 11px;
+  }
 
   .timeline-nodes:nth-child(odd) h3,
   .timeline-nodes:nth-child(odd) p {
@@ -576,7 +673,7 @@ strong {
   }
 
   .timeline-icons {
-    
+
     display: none;
     position: absolute;
     left: 0%;
@@ -615,6 +712,8 @@ strong {
 }
 
 @media (max-width: 575px) {
+
+
 
   .timeline::before {
     content: "";
@@ -795,9 +894,11 @@ strong {
   margin-bottom: 4px;
   margin-right: 15px;
 }
-.whats-icon{
+
+.whats-icon {
   height: 25px;
 }
+
 .social-icon-link:hover {
   color: var(--primary-color);
 }
@@ -809,7 +910,7 @@ strong {
   .hero .container {
     height: 740px;
   }
-  
+
 }
 
 @media screen and (max-width: 991px) {
@@ -818,27 +919,30 @@ strong {
   }
 
   h1 {
-    font-size: 38px;
-  }
-
-  h2 {
     font-size: 32px;
   }
 
+  h2 {
+    font-size: 28px;
+  }
+
   h3 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .logo-menu {
+    width: 40px;
   }
 
   .section-padding {
@@ -907,15 +1011,17 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
-  .alinha-imagem{
+  .alinha-imagem {
     display: grid;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 350px !important;
   }
-  .carousel-metrics{
+
+  .carousel-metrics {
     width: 480px !important;
   }
+
   .heroText {
     padding: 1rem;
   }
