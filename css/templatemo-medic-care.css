@@ -605,11 +605,11 @@ strong {
 @media (max-width: 767px) {
 
   .formulario p {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .formulario input {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .exp-box {
@@ -625,7 +625,7 @@ strong {
   }
 
   .p-mobile {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .faq-box {
@@ -643,12 +643,12 @@ strong {
   .faq-box p {
     margin: 0;
     /* Remove margens padrão para ajuste fino */
-    font-size: 11px;
+    font-size: 13px;
   }
   .exp-box p {
     margin: 0;
     /* Remove margens padrão para ajuste fino */
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .timeline-nodes:nth-child(odd) h3,
