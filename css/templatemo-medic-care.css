@@ -10,9 +10,9 @@ https://templatemo.com/tm-566-medic-care
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #bbc4ccc5;
+  --white-color:                  #F9F9F9;
   --primary-color:                #000000;
-  --section-bg-color:             #F9F9F9;
+  --section-bg-color:             #bbc4ccc5;
   --dark-color:                   #000000;
   --title-color:                  #565758;
   --p-color:                      #717275;
@@ -132,45 +132,56 @@ a:hover {
   height: 580px !important;
 }
 
+.duvidas-comuns{
+  height: 100% !important;
+  padding: 35px;
+}
+
+.whats-icon-fixed {
+  position: fixed;
+  bottom: 20px;  /* Distância do fundo da página */
+  right: 20px;   /* Distância do lado direito da página */
+  width: 70px;   /* Largura do ícone */
+  height: auto;  /* Altura automática para manter a proporção */
+  z-index: 1000; /* Garante que o ícone fique acima de outros elementos da página */
+}
+
+.logo-menu{
+  width: 50px;
+}
+.duvidas-asks{
+  background: #000000;
+}
+
 /*---------------------------------------
   CUSTOM LINK               
 -----------------------------------------*/
 .custom-link {
   display: inline-block;
   text-decoration: none;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--primary-color); /* Ajustado para uma borda mais fina */
   color: var(--primary-color);
+  background-color: white; /* Adicionado fundo branco para contraste */
   pointer-events: auto;
-  font-weight: var(--font-weight-semibold);
-  line-height: 40px;
+  font-weight: var(--font-weight-bold); /* Alterado para bold para maior destaque */
+  line-height: 48px; /* Aumentado para melhorar a legibilidade e o toque */
   position: relative;
-  padding: 0 30px;
+  padding: 0 35px; /* Ajustado para um melhor espaço interno */
   box-sizing: border-box;
-  margin: 0;
+  margin: 5px; /* Pequena margem para evitar sobreposição quando usado em série */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   overflow: hidden;
-  border-radius: 0;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Mantido em maiúsculas para consistência e ênfase */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+  cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
 }
 
-.custom-link::before {
-  content: attr(data-hover);
-  background-color: var(--border-color);
-  color: var(--primary-color);
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  left: 0;
-  transition: all 300ms cubic-bezier(0.19, 1, 0.56, 1);
-  right: 0;
-  text-align: center;
-}
-
-.custom-link:hover::before {
-  top: 0;
+.custom-link:hover {
+  background-color: var(--section-bg-color); /* Cor de fundo ao passar o mouse */
+  color: var(--primary-color); /* Texto fica branco ao passar o mouse */
 }
 
 b,
@@ -543,7 +554,6 @@ strong {
 @media (max-width: 767px) {
 
 
-
   .timeline-nodes:nth-child(odd) h3,
   .timeline-nodes:nth-child(odd) p {
     text-align: left;
@@ -555,7 +565,7 @@ strong {
 
   .timeline::before {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     top: 60px;
     left: 33px;
@@ -566,6 +576,8 @@ strong {
   }
 
   .timeline-icons {
+    
+    display: none;
     position: absolute;
     left: 0%;
     top: 60px;
@@ -606,13 +618,14 @@ strong {
 
   .timeline::before {
     content: "";
-    display: block;
+    display: contents;
     top: 60px;
     left: 57px;
     height: 87%;
   }
 
   .timeline-icons {
+    display: none;
     position: absolute;
     left: -10px;
   }
@@ -783,8 +796,7 @@ strong {
   margin-right: 15px;
 }
 .whats-icon{
-  height: 50px;
-  float: right;
+  height: 25px;
 }
 .social-icon-link:hover {
   color: var(--primary-color);
@@ -830,7 +842,7 @@ strong {
   }
 
   .section-padding {
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 5rem;
   }
 
